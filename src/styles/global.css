@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+
+@theme{
+    --color-primary: #214567;
+    --color-secondary: #4A90E2; 
+    --color-accent: #FF4D8A; 
+    --color-background: #FAFAFE; 
+    --color-surface: #FFFFFF;
+    --color-text: #2D3748; 
+    --font-cals: "Cal Sans", "sans-serif";
+    --font-inter: "Inter", "sans-serif";
+}
+
+@font-face {
+    font-family: 'Cal Sans';
+    src: url("/fonts/CalSans-SemiBold.woff2") format('woff2');
+    font-weight: 600;
+    font-display: swap;
+  }
+
+html{
+    font-family: "Inter", sans-serif;
+}
+h1, span{
+    font-family: "Cal Sans", sans-serif;
+}

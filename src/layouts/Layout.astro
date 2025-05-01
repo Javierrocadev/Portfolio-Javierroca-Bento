@@ -1,14 +1,38 @@
+---
+import "./src/styles/global.css"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import BentoCard from "../components/BentoCard.astro"
+import Card from "../components/Card.astro"
+import Hero from "@/components/Hero.astro"
+---
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<title>Portfolio Javierrocadev</title>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content="Portfolio Javierrocadev - Portfolio de Frontend Developer y UI de	signer" />
+		<meta property="og:title" content="Javier Roca - Portfolio">
+		<meta property="og:url" content="Javier Roca - Portfolio">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="es_ES">
+		<meta property="og:image" content="https://www.vercer.javierrocadev.com/og.jpg">
+	
+		<!--poner una foto de Portfolio en public y la url donde va a estar-->
 	</head>
 	<body>
-		<slot />
+		<Header/>
+		
+		<!-- <Card/> -->
+		<!-- <BentoCard/>-->
+		 <main>
+			<slot />
+		 <main/>
+
+		
+		<Footer/>
 	</body>
 </html>
 
@@ -18,5 +42,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		background: #FAFAFE ;
 	}
 </style>
